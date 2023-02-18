@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio | Christian Cortijo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Christian</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/christian cortijo.jpg" alt="">
+            </div>
+            <h1>Christian Cortijo</h1>
+            <h2>Técnico en Ciberseguridad y SMR</h2>
+            <div class="redes">
+                <a target="_blank" href="https://www.facebook.com/christian.cortijosantamaria"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" href="https://twitter.com/ccorti05"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/christian_corti05/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/christian-cortijo-santamar%C3%ADa-793814162/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Christian Cortijo.</span> Apasionado de la informática y las telecomunicaciones, convierto mi profesión en mi pasión, desde mis comienzos como informático he estado día a día luchando con estos "cacharros" disfruto "picando código" solucionando problemas técnicos y creando topologías de red eficientes. .</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            05-11-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+34) 642 95 21 69
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            contacto@christiancortijo.es
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.christiancortijo.es
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            C/Del Canal, Nº6 2ºA, Talavera de la Reina (Toledo)
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>TÉCNICO EN CIBERSEGURIDAD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>DEV</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-flask"></i>
+                            <span>CIENCIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-walking"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técncias</h3>
+                    <div class="skill">
+                        <span>Programacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Soporte Técnico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Servicios y servidores</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Edicion de imagen y video</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Presentaciones</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Formación reglada</h3>
+                    <div class="item izq">
+                        <h4>CFGS Desarrollo de Aplicaciones Multiplataforma</h4>
+                        <span class="casa">IES Ribera del Tajo</span>
+                        <span class="fecha">2022 - Cursando actualmente</span>
+                        <p>Grado superior enfocado al desarrollo de aplicaciones en todo tipo de entornos, algunos conocimientos adquiridos son, programación en JAVA, bases de datos, sistemas informáticos, entornos de desarrollo, lenguaje de marcas, etc... </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>CFGM Sistemás Microinformáticos y Redes</h4>
+                        <span class="casa">IES Ribera del Tajo</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Grado medio enfocado a la instalación y mantenimiento de infraestructuras informáticas, algunos conocimientos adquiridos son, lenguaje de marcas y estilos, administraciñon y gestios de servicios (AD, LDAP, DHCP, RADIUS, APACHE, etc...) montaje y mantenimiento de eqipos informaticos, sistemas operativos, aplicaciones ofimaticas, etc...</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia profesional</h3>
+                    <div class="item der">
+                        <h4>Técnico de Ciberseguridad</h4>
+                        <span class="casa">Unitel - Sistemas de telecomunicaciones de CLM</span>
+                        <span class="fecha">Junio de 2022 - Trabajando en la actualidad</span>
+                        <p>En Unitel, realizo tareas de soporte informático (redes, servidores, soporte a usuarios) además en el SOC (Centro de Operaciones Especiales) de nuestro centro el CEISTT (Centro
+                            Especializado en Informática, Seguridad y Tecnología) realizo pruebas de pentesting con Kali Linux, en máquinas de laboratorio y en nuestro entorno real, de cara a mostrar
+                            en nuestros webinars la importancia de la Ciberseguridad, también realizo ponencias en formato hibrido sobre temas relacionados con la informática, también, estoy formandome 
+                            actualmente en tecnologías de PaloAlto Networks y Arista.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/presentaciones.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Presentaciones</h3>
+                        <p>Instituciones públicas como el CRID</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ceistt-exterior.png" alt="">
+                    <div class="overlay">
+                        <h3>SOC CEISTT</h3>
+                        <p>Pruebas de laboratio pentesting</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/crid.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Observatorio de Ciberseguridad CRID</h3>
+                        <p>Formación en Firewalls de PAN y realización PoC Prisma Cloud</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/manos a la tecla.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Manos a la tecla</h3>
+                        <p>Lider de grupo y programador junior en entornos como Unity3D</p>
+                    </div>
+                </div>
+                <div class="proyecto fin de grado ">
+                    <img src="img/software.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Software cajero automático</h3>
+                        <p>Aún en desarrollo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portfolio.png" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo de mi Portfolio</h3>
+                        <p>Es este sitio web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="enviar.php" method="post">
+                        <input name="nombre" type="text" placeholder="Tú Nombre *" required>
+                        <input name="telefono" type="text" placeholder="Número de teléfono">
+                        <input name="email" type="text" placeholder="Dirección de correo electrónico *" required>
+                        <input name="asunto" type="text" placeholder="Asunto *" required>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje *" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Dirección: C/Del Canal Nº6 2ºA Talavera de la Reina, Toledo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telefóno: 642 95 21 69 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: contacto@christiancortijo.es
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <span>Todos los derechos reservados 2022-2023 christiancortijo.es</span><br>
+            <a target="_blank" href="https://www.facebook.com/christian.cortijosantamaria"><i class="fa-brands fa-facebook-f"></i></a>
+            <a target="_blank" href="https://twitter.com/ccorti05"><i class="fa-brands fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/christian_corti05/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/christian-cortijo-santamar%C3%ADa-793814162/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
